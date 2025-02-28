@@ -12,6 +12,7 @@ const webhooks = {
   MERGE: [],
 };
 
+// this can be an another service
 app.get("/api/webhook", (req, res) => {
   const { payloadUrl, secret, eventTypes } = req.body;
 
